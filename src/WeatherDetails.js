@@ -14,13 +14,20 @@ export default function WeatherForm(props) {
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
       <div className="row mt-3">
-        <div className="col-6">
-          <div className="d-flex">
-            <WeatherIcon code={props.data.icon} />{" "}
+        <div className="col-6 mt-3">
+          <div
+            className="clearfix"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <div className="float-left">
+              <WeatherIcon code={props.data.icon} size={50} />{" "}
+            </div>
+            <div className="float-left">
+              <WeatherTemperature celsius={props.data.temperature} />
+            </div>
           </div>
-          <WeatherTemperature celsius={props.data.temperature} />
         </div>
-        <div className="col-6">
+        <div className="col-6 mt-3">
           <ul>
             <li>
               Air Pressure: {props.data.pressure}
