@@ -38,7 +38,7 @@ export default function WeatherForm(props) {
               {""} %
             </li>
             <li>
-              Wind:{props.data.windspeed} {""}km/h
+              Wind: {props.data.windspeed} {""}km/h
             </li>
           </ul>
         </div>
