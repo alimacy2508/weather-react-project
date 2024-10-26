@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(
+    245,
+    237,
+    248
+  ) !important; /* Change this to your desired color */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full height of the viewport */
+}
